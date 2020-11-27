@@ -10,12 +10,21 @@ module Types
 
 
     field :certification_exam, Types::CertificationExamType,
-          null: false, description: "Retrieve a specific certification exam" do
+          null: true, description: "Retrieve a specific certification exam" do
       argument :id, ID, required: true
     end
 
     def certification_exam(id:)
       CertificationExam.find(id)
+    end
+
+    field :user, Types::UserType,
+          null: true, description: "Retrieve a specific user by ID" do
+      argument :id, ID, required: true
+    end
+
+    def user(id:)
+      User.find(id)
     end
 
     field :user_by_username, Types::UserType,
