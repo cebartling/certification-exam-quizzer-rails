@@ -7,5 +7,6 @@ module Types
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
 
     field :exam_questions, Types::ExamQuestionType.connection_type, null: false
+    field :exam_topics, Types::ExamTopicType.connection_type, null: false
   end
 end
