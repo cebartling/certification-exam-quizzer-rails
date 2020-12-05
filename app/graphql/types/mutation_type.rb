@@ -13,7 +13,7 @@ module Types
     # field :update_exam_question_response, mutation: Mutations::UpdateExamQuestionResponse
 
     field :create_exam_question, mutation: Mutations::CreateExamQuestionMutation
-    # field :delete_exam_question, mutation: Mutations::DeleteExamQuestion
+    field :delete_exam_question, mutation: Mutations::DeleteExamQuestionMutation
     field :update_exam_question, mutation: Mutations::UpdateExamQuestionMutation
 
     # field :create_certification_exam, mutation: Mutations::CreateCertificationExam
