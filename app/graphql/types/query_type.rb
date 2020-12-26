@@ -8,7 +8,6 @@ module Types
       CertificationExam.all
     end
 
-
     field :certification_exam, Types::CertificationExamType,
           null: true, description: "Retrieve a specific certification exam" do
       argument :id, ID, required: true
@@ -16,6 +15,15 @@ module Types
 
     def certification_exam(id:)
       CertificationExam.find(id)
+    end
+
+    field :exam_question, Types::ExamQuestionType,
+          null: true, description: "Retrieve a specific exam question" do
+      argument :id, ID, required: true
+    end
+
+    def exam_question(id:)
+      ExamQuestion.find(id)
     end
 
     field :user, Types::UserType,
