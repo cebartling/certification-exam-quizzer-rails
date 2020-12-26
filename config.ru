@@ -15,3 +15,4 @@ use Rack::Cors do
 end
 
 run Rails.application
+Rails.application.load_server
