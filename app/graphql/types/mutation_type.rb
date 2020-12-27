@@ -8,9 +8,9 @@ module Types
     # field :delete_exam_topic, mutation: Mutations::DeleteExamTopic
     # field :update_exam_topic, mutation: Mutations::UpdateExamTopic
 
-    # field :create_exam_question_response, mutation: Mutations::CreateExamQuestionResponse
-    # field :delete_exam_question_response, mutation: Mutations::DeleteExamQuestionResponse
-    # field :update_exam_question_response, mutation: Mutations::UpdateExamQuestionResponse
+    field :create_exam_question_response, mutation: Mutations::CreateExamQuestionResponseMutation
+    field :delete_exam_question_response, mutation: Mutations::DeleteExamQuestionResponseMutation
+    field :update_exam_question_response, mutation: Mutations::UpdateExamQuestionResponseMutation
 
     field :create_exam_question, mutation: Mutations::CreateExamQuestionMutation
     field :delete_exam_question, mutation: Mutations::DeleteExamQuestionMutation
